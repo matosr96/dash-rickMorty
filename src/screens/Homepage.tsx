@@ -1,4 +1,3 @@
-import Banner from "@/components/Banner";
 import "@styles/screens/Homepage.css";
 
 const Homepage = () => {

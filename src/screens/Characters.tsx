@@ -1,23 +1,21 @@
-import React, { useState } from "react";
-import "@styles/screens/characters.css";
-import { useDispatch, useSelector } from "react-redux";
-import axios from "axios";
+import { useEffect, useState } from "react";
+import List from "@/actions/List";
+import CharacterList from "@/components/CharacterList";
+import '@styles/screens/characters.css'
 
 const Characters = () => {
+  const [characters, setCharacters] = useState([]);
+  const [info, setInfo] = useState<{}>({});
 
-  const [character, setCharacter] = useState([])
-  const [info, setInfo] = useState<{}>({})
+  useEffect(() => {
+    List(setCharacters, setInfo);
+  }, []);
 
-
-  
-
-
-
-
-
-
-
-  return <div className="character">Characters</div>;
+  return(
+    <div className="character">
+      <CharacterList character={characters} />
+    </div>
+  );
 };
 
 export default Characters;
