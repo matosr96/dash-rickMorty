@@ -1,0 +1,37 @@
+.header{
+    width: 100%;
+    position: absolute;
+}
+
+.content-header{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .4rem;
+}
+
+.content-header .logo{
+    padding-left: 4rem;
+}
+
+.content-header .logo img{
+    width: 14rem;
+}
+
+.content-header .items-header{
+    display: flex;
+    gap: 2rem;
+    padding-right: 4rem;
+}
+
+.content-header .items-header h3{
+    color: var(--white-color);
+    text-decoration-line: none;
+}
+
+.Link{
+    text-decoration: none;
+}

@@ -1,0 +1,29 @@
+.homepage{
+    background-image: url('/back.png');
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.info-homepage{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 10rem;
+}
+
+.info-homepage h1{
+    color: var(--blue-rick);
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.info-homepage P{
+    color: var(--white-color);
+    font-size: 1.8rem;
+    text-align: justify;
+}
